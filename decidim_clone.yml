@@ -1,0 +1,4 @@
+- name: Clone the Decidim Container repo
+  ansible.builtin.git:
+    repo: https://github.com/decidim/docker.git
+    dest: /home/vagrant/decidim-docker

@@ -1,0 +1,10 @@
+- name: test docker-compose
+  docker_compose:
+    project_src: /home/vagrant/decidim-docker
+    state: present
+
+#- name: Run the Decidim container
+#  become: yes
+#  shell:
+#    cmd: "docker-compose up"
+#    chdir: /home/vagrant/decidim-docker

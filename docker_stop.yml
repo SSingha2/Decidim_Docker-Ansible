@@ -1,0 +1,9 @@
+---
+- hosts: 192.168.10.16
+  become: yes
+  tasks:
+
+  - name: Stop Docker
+    docker_compose:
+      project_src: /home/vagrant/decidim-docker
+      state: absent
